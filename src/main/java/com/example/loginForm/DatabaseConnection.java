@@ -37,8 +37,13 @@ public class DatabaseConnection {
         );
         statement.execute("insert into USERACCOUNTS (Firstname, LASTNAME,USERNAME,PASSWORD) " +
                 "values ('Test', 'Tester', 'test', 'test')");
+
         statement.execute("insert into USERACCOUNTS (Firstname, LASTNAME,USERNAME,PASSWORD) " +
                 "values ('Zweiter', 'Muller', 'zmuller', 'password')");
+        statement.execute("insert into USERACCOUNTS (Firstname, LASTNAME,USERNAME,PASSWORD) " +
+                "values ('Dritter', 'Muller', 'admin', 'admin')");
+        statement.execute("insert into USERACCOUNTS (Firstname, LASTNAME,USERNAME,PASSWORD) " +
+                "values ('Dritter', 'Muller', 'user', 'user')");
     }
 
 
